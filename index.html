@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チーム決め</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        button {
+            display: block;
+            margin: 20px 0;
+        }
+        .teams {
+            display: flex;
+            justify-content: space-between;
+        }
+        .team {
+            width: 45%;
+        }
+    </style>
+</head>
+<body>
+    <h1>チーム・レーン決め</h1>
+
+    <h3>プレイヤー名を入力してください（10人まで）:</h3>
+    <div id="player-inputs">
+        <input type="text" id="player1" placeholder="プレイヤー1">
+        <input type="text" id="player2" placeholder="プレイヤー2">
+        <input type="text" id="player3" placeholder="プレイヤー3">
+        <input type="text" id="player4" placeholder="プレイヤー4">
+        <input type="text" id="player5" placeholder="プレイヤー5">
+        <input type="text" id="player6" placeholder="プレイヤー6">
+        <input type="text" id="player7" placeholder="プレイヤー7">
+        <input type="text" id="player8" placeholder="プレイヤー8">
+        <input type="text" id="player9" placeholder="プレイヤー9">
+        <input type="text" id="player10" placeholder="プレイヤー10">
+    </div>
+
+    <button id="assign-teams-btn">チームを決める</button>
+
+    <div class="teams">
+        <div class="team">
+            <h2>青チーム</h2>
+            <p>Top: <span id="blue-top"></span></p>
+            <p>Jungle: <span id="blue-jg"></span></p>
+            <p>Mid: <span id="blue-mid"></span></p>
+            <p>Bot: <span id="blue-bot"></span></p>
+            <p>Support: <span id="blue-sp"></span></p>
+        </div>
+        <div class="team">
+            <h2>赤チーム</h2>
+            <p>Top: <span id="red-top"></span></p>
+            <p>Jungle: <span id="red-jg"></span></p>
+            <p>Mid: <span id="red-mid"></span></p>
+            <p>Bot: <span id="red-bot"></span></p>
+            <p>Support: <span id="red-sp"></span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
